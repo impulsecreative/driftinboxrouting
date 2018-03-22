@@ -1,0 +1,14 @@
+<script>
+drift.on('ready',function(api, payload) {
+ drift.config({
+    autoAssignee: {
+      name: 'Trevor Impulse2',
+      title: 'Engineer',
+      email: 'trevor2@example.com',
+      avatarUrl: 'https://s.gravatar.com/avatar/...',
+    },
+    inboxId: 104439,
+  })
+})
+// additional documentation: https://devdocs.drift.com/docs/widget-configuration
+</script>

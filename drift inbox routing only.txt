@@ -1,0 +1,8 @@
+<script>
+drift.on('ready',function(api, payload) {
+ drift.config({
+    inboxId: XXXXXX, // this is the inbox id that you would find in your drift app inbox url
+  })
+})
+// additional documentation: https://devdocs.drift.com/docs/widget-configuration
+</script>
