@@ -1,0 +1,13 @@
+<script>
+drift.on('ready',function(api, payload) {
+ drift.config({
+    autoAssignee: {
+      name: '{{request_contact.lazy_company_without_defaults.hubspot_owner_id.firstname }} {{request_contact.lazy_company_without_defaults.hubspot_owner_id.lastname }}',
+      email: 'trevor2@example.com',
+      avatarUrl: 'https://s.gravatar.com/avatar/{{request_contact.lazy_company_without_defaults.hubspot_owner_id.email }}',
+    },
+    inboxId: XXXXX,
+  })
+})
+// additional documentation: https://devdocs.drift.com/docs/widget-configuration
+</script>
