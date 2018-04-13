@@ -1,0 +1,13 @@
+{% if owner %}
+<script>
+drift.on('ready',function(api, payload) {
+ drift.config({
+    autoAssignee: {
+      name: '{{ owner.fullname }}',
+      email: '{{ owner.email }}',
+      avatarUrl: 'https://s.gravatar.com/avatar/{{ owner.email }}',
+    })
+})
+// additional documentation: https://devdocs.drift.com/docs/widget-configuration
+</script>
+{% endif %}
