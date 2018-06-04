@@ -1,0 +1,15 @@
+<script>
+
+window.drift.on("startConversation",
+
+function(){fbq("track","startConversation")});
+
+window.drift.on("emailCapture",
+
+function(){fbq("track","emailCaptured")});
+
+window.drift.on("scheduling:meetingBooked",
+
+function(){fbq("track","meetingBooked")});
+
+</script>
